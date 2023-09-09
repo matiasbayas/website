@@ -140,7 +140,6 @@ sections:
       filters:
         folders:
           - work-in-progress
- d
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
       view: compact
