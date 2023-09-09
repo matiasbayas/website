@@ -130,7 +130,37 @@ sections:
       # Choose a layout view
       view: compact
       columns: '2'
-  - block: portfolio
+
+    - block: collection
+    id: work-in-progress
+    content:
+      title: Work in progress
+      subtitle: ''
+      text: ''
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 5
+      # Filter on criteria
+      filters:
+        folders:
+          - work-in-progress
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    
+    design:
+      # Choose a layout view
+      view: compact
+      columns: '2'
+    
+  - block: collection
     id: projects
     content:
       title: Projects
