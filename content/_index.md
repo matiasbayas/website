@@ -133,7 +133,7 @@ sections:
       columns: '2'
 
     - block: collection
-    id: work-in-progress
+    id: work-in
     content:
       title: Work in progress
       subtitle: ''
@@ -143,7 +143,7 @@ sections:
       # Filter on criteria
       filters:
         folders:
-          - work-in-progress
+          - work-in
         author: ""
         category: ""
         tag: ""
