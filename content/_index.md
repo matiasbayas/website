@@ -100,8 +100,8 @@ sections:
   #        title: 'Object-Oriented Programming in R'
   #        url: ''
   
-  design:
-      columns: '2'
+  # design:
+  #    columns: '2'
   - block: collection
     id: working-papers
     content:
