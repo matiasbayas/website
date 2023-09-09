@@ -134,9 +134,9 @@ sections:
 
     
   - block: collection
-    id: projects
+    id: work-in-progress
     content:
-      title: Projects
+      title: Work in progress
       filters:
         folders:
           - project
