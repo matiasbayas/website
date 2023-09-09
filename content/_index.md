@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: hero
     content:
-      title: Hugo Academic Theme
+      title: Matias Bayas-Erazo
       image:
         filename: hero-academic.png
       cta:
