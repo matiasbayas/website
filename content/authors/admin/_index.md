@@ -52,7 +52,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: "mailto:matiasbayas-erazo2022@u.northwestern.edu"
   - icon: github
     icon_pack: fab
     link: https://github.com/matiasbayas
