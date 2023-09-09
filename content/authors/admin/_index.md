@@ -82,4 +82,6 @@ highlight_name: true
 
 I am a Ph.D. candidate in Economics at Northwestern University, interested in macroeconomics and optimal taxation.
 
+I will be on the 2023/2024 job market. 
+
 {style="text-align: justify;"}
