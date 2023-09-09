@@ -33,7 +33,7 @@ interests:
 education:
   courses:
     - course: PhD in Economics
-      institution: Stanford University
+      institution: Northwestern University
       year: 2024 (expected)
     - course: MSc Econometrics and Mathematical Economics
       institution: London School of Economics
