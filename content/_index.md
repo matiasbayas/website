@@ -204,7 +204,7 @@ sections:
       #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
       email: matiasbayas-erazo2022@u.northwestern.edu
-      phone: 888 888 88 88
+      # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
         street: 2211 Campus Drive
