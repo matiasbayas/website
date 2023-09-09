@@ -103,7 +103,7 @@ sections:
   # design:
   #    columns: '2'
   
-  - block: collection
+- block: collection
     id: working-papers
     content:
       title: Working papers
