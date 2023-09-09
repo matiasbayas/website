@@ -133,9 +133,9 @@ sections:
       columns: '2'
 
     - block: collection
-    id: working-papers
+    id: work-in-progress
     content:
-      title: Working papers
+      title: Work in progress
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
@@ -143,7 +143,7 @@ sections:
       # Filter on criteria
       filters:
         folders:
-          - working-papers
+          - work-in-progress
         author: ""
         category: ""
         tag: ""
