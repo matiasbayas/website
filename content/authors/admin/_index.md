@@ -19,7 +19,7 @@ role: PhD student in Economics
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Northwestern University
-    url: (https://economics.northwestern.edu/)
+    url: [https://economics.northwestern.edu/]
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests lie in macroeconomics and optimal taxation.
