@@ -7,7 +7,6 @@ summary: with [Fergal Hanks](https://hanksf.github.io/)
 
 authors:
 - admin
-- [Fergal Hanks](https://hanksf.github.io/) 
-
+- Fergal Hanks
 
 ---
