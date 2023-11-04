@@ -3,7 +3,7 @@
 title: The Joint Dynamics of Labour and Capital
 
 url_pdf: ''
-url_slides: 'ML_presentation.pdf'
+# url_slides: 'ML_presentation.pdf'
 
 summary: with [Fergal Hanks](https://hanksf.github.io/)  
         
