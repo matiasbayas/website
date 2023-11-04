@@ -2,6 +2,9 @@
 
 title: The Joint Dynamics of Labour and Capital
 
+url_pdf: ''
+
+
 summary: with [Fergal Hanks](https://hanksf.github.io/)  
         
          
@@ -12,7 +15,5 @@ authors:
 - admin
 - Fergal Hanks
 
-
-url_pdf: ''
 
 ---
