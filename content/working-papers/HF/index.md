@@ -12,7 +12,6 @@ authors:
 - admin
 - Fergal Hanks
 
-draft: true
 
 url_pdf: ''
 
