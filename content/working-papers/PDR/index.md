@@ -1,5 +1,5 @@
 ---
-title: "Optimal Public Debt with Redistribution (JMP, coming soon)"
+title: "Optimal Public Debt with Redistribution (JMP)"
 
 url_pdf: ''
 
