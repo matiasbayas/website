@@ -72,6 +72,8 @@ highlight_name: true
 
 I am a Postdoctoral Researcher at the University of Zürich. 
 
+My fields of research are macroeconomics and public finance. In particular, I am interested in fiscal policy, the aggregate implications of heterogeneity, and rational inattention. 
+
 I received my  Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024. 
 
 {style="text-align: justify;"}
