@@ -52,7 +52,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: "mailto:matiasbayas-erazo"
+    link: "mailto:matias.bayas-erazo@econ.uzh.ch"
   - icon: github
     icon_pack: fab
     link: https://github.com/matiasbayas
