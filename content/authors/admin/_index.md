@@ -14,27 +14,27 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD student in Economics
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Northwestern University
-    url: "https://economics.northwestern.edu/"
+  - name: University of Zurich
+    url: "https://www.econ.uzh.ch/en.html"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests lie in macroeconomics and optimal taxation.
+bio: My research interests lie in macroeconomics and public finance.
 
 # Interests to show in About widget
 interests:
   - Macroeconomics
-  - Optimal taxation
+  - Public finance
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD in Economics
       institution: Northwestern University
-      year: 2024 (expected)
+      year: 2024 
     - course: MSc Econometrics and Mathematical Economics
       institution: London School of Economics
       year: 2017
@@ -52,7 +52,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: "mailto:matiasbayas-erazo2022@u.northwestern.edu"
+    link: "mailto:matiasbayas-erazo"
   - icon: github
     icon_pack: fab
     link: https://github.com/matiasbayas
@@ -70,8 +70,8 @@ email: ''
 highlight_name: true
 ---
 
-I am a Ph.D. candidate in Economics at Northwestern University, interested in macroeconomics and optimal taxation.
+I am a Postdoctoral Researcher at the University of Zürich. 
 
-I will be on the 2023/2024 job market. 
+I received my  Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024. 
 
 {style="text-align: justify;"}
