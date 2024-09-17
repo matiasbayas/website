@@ -203,16 +203,16 @@ sections:
       # text: |-
       #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: matiasbayas-erazo2022@u.northwestern.edu
+      email: matias.bayas-erazo@econ.uzh.ch
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
-        street: 2211 Campus Drive
-        city: Evanston
-        region: IL
-        postcode: '60208'
-        country: United States
-        country_code: US
+        street: Schönberggasse 1
+        city: Zürich
+        region: Switzerland
+        postcode: '8001'
+        country: Switzerland
+        country_code: CH
       # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
       # office_hours:
       # - 'Monday 10:00 to 13:00'
