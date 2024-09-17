@@ -18,7 +18,7 @@ role: Postdoctoral Researcher
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: University of Zurich
+  - name: University of Zürich
     url: "https://www.econ.uzh.ch/en.html"
 
 # Short bio (displayed in user profile at end of posts)
