@@ -1,6 +1,6 @@
 ---
 
-title: The Joint Dynamics of Labour and Capital
+title: Heterogeneous Firms and the Dynamics of Investment
 
 # url_pdf: ''
 url_slides: 'ML_presentation.pdf'
