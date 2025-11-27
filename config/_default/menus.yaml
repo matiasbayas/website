@@ -5,18 +5,11 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: '#intro'
     weight: 10
-  - name: Working papers
-    url: '#working-papers'
+  - name: Research
+    url: '#research'
     weight: 20
-  - name: Work in progress
-    url: '#work-in-progress'
+  - name: Code
+    url: '#code'
     weight: 30
-  - name: CV
-    url: uploads/resume.pdf
-    weight: 40
-  - name: Contact
-    url: '#contact'
-    weight: 50
-

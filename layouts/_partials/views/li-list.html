@@ -1,0 +1,114 @@
+{{ $item := .item }}
+{{ $page := .page }}
+{{ $title := $item.Title | default "Untitled" }}
+{{ $url := $item.RelPermalink }}
+{{ with $item.Params.external_link }}
+{{ $url = . }}
+{{ end }}
+
+{{ $status := $item.Params.status | default "" }}
+{{ $year := "" }}
+{{ if $item.Params.year }}
+{{ $year = printf "%v" $item.Params.year }}
+{{ else if not $item.Date.IsZero }}
+{{ $year = $item.Date.Format "2006" }}
+{{ end }}
+
+{{ $meta := $status }}
+{{ if and (eq $meta "") ($year) }}
+{{ $meta = $year }}
+{{ end }}
+
+{{ $show_abstract := in (slice "working-papers" "work-in-progress" "publication" "research") $item.Section }}
+
+{{ $raw := "" }}
+{{ if $item.Params.abstract }}
+{{ $raw = $item.Params.abstract }}
+{{ else if $item.Params.summary }}
+{{ $raw = $item.Params.summary }}
+{{ else if $item.Summary }}
+{{ $raw = $item.Summary }}
+{{ end }}
+{{ $summary := markdownify $raw | trim " \t\r\n" }}
+<!-- DEBUG: Title: {{ $title }} -->
+<!-- DEBUG: Params.abstract: '{{ $item.Params.abstract }}' -->
+<!-- DEBUG: Params.summary: '{{ $item.Params.summary }}' -->
+<!-- DEBUG: Raw: '{{ $raw }}' -->
+<!-- DEBUG: Final Summary Len: {{ len $summary }} -->
+
+{{ $author_slugs := $item.Params.authors | default (slice) }}
+{{ $authors := slice }}
+{{ range $author_slugs }}
+{{ if ne . "admin" }}
+{{ $page := site.GetPage (printf "authors/%s" .) }}
+{{ $name := cond (ne $page nil) $page.Title . }}
+{{ $authors = $authors | append $name }}
+{{ end }}
+{{ end }}
+{{ $author_text := "" }}
+{{ if gt (len $authors) 0 }}
+{{ $author_text = delimit $authors ", " }}
+{{ end }}
+
+
+<li class="li-list-item">
+  <div class="li-block">
+    <div class="li-line">
+      <div>
+        <a href="{{ $url }}" class="li-title-link"><span class="li-title">{{ $title }}</span></a>
+        {{ $author_names := slice }}
+        {{ range $author_slugs }}
+        {{ if ne . "admin" }}
+        {{ $name := . }}
+        {{ $page := site.GetPage (printf "authors/%s" .) }}
+        {{ if $page }}
+        {{ $name = $page.Title }}
+        {{ end }}
+        {{ $author_names = $author_names | append $name }}
+        {{ end }}
+        {{ end }}
+        {{ if gt (len $author_names) 0 }}
+        <span class="li-coauthors">with {{ delimit $author_names ", " }}</span>
+        {{ end }}
+      </div>
+      {{ with $meta }}<span class="li-meta">{{ . }}</span>{{ end }}
+    </div>
+
+    <div class="btn-links">
+      {{ if and $show_abstract (gt (len $summary) 0) }}
+      {{ $abstractId := printf "abstract-%s" ($item.RelPermalink | md5) }}
+      <label for="{{ $abstractId }}" class="btn btn-outline-primary btn-page-header btn-sm">Abstract</label>
+      {{ end }}
+
+      {{ if $item.Params.url_pdf }}
+      {{ $pdf := $item.Resources.GetMatch $item.Params.url_pdf }}
+      {{ $pdfUrl := "" }}
+      {{ if $pdf }}
+      {{ $pdfUrl = $pdf.RelPermalink }}
+      {{ else }}
+      {{ $pdfUrl = $item.Params.url_pdf }}
+      {{ end }}
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ $pdfUrl }}" target="_blank"
+        rel="noopener">PDF</a>
+      {{ end }}
+
+      {{ if $item.Params.url_slides }}
+      {{ $slides := $item.Resources.GetMatch $item.Params.url_slides }}
+      {{ $slidesUrl := "" }}
+      {{ if $slides }}
+      {{ $slidesUrl = $slides.RelPermalink }}
+      {{ else }}
+      {{ $slidesUrl = $item.Params.url_slides }}
+      {{ end }}
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ $slidesUrl }}" target="_blank"
+        rel="noopener">Slides</a>
+      {{ end }}
+    </div>
+
+    {{ if and $show_abstract (gt (len $summary) 0) }}
+    {{ $abstractId := printf "abstract-%s" ($item.RelPermalink | md5) }}
+    <input type="checkbox" id="{{ $abstractId }}" class="abstract-trigger" style="position: absolute; opacity: 0;">
+    <div class="li-abstract">{{ $summary | safeHTML }}</div>
+    {{ end }}
+  </div>
+</li>
