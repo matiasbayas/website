@@ -56,6 +56,9 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/matiasbayas
+  - icon: linkedin
+    icon_pack: fab
+    link: https://www.linkedin.com/in/matias-bayas-erazo-46a1192a5/
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
@@ -72,10 +75,10 @@ highlight_name: true
 
 Economist studying optimal taxation and macroeconomics.
 
+Curious about AI and its applications.
+
 I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact.
 
 I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
-
-Driven by a curiosity for AI, I build systems to explore its emerging applications. 
 
 {style="text-align: justify;"}

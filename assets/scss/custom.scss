@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Newsreader", "Hanken Grotesk", "Plus Jakarta Sans", "Outfit", "Space Grotesk", "Manrope", "Inter", "Chivo", "Soehne", "Neue Haas Grotesk Display Pro", "Suisse Intl", "SF Pro Display", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", serif !important;
+  font-family: "Chivo", "Newsreader", "Hanken Grotesk", "Plus Jakarta Sans", "Outfit", "Space Grotesk", "Manrope", "Inter", "Soehne", "Neue Haas Grotesk Display Pro", "Suisse Intl", "SF Pro Display", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", serif !important;
   font-weight: 600;
   letter-spacing: -0.018em;
   line-height: 1.05;
@@ -38,28 +38,20 @@ p {
 }
 
 a {
-  color: inherit;
+  color: #52525b;
+  /* Subtle grey-blue */
   text-decoration: none;
   position: relative;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #18181b;
+  /* Darker on hover */
 }
 
 a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -0.08em;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.2;
-  transition: opacity 120ms ease, transform 120ms ease;
-  transform: scaleX(0.9);
-  transform-origin: left;
-}
-
-a:hover::after {
-  opacity: 0.55;
-  transform: scaleX(1);
+  content: none !important;
 }
 
 .btn,
@@ -82,15 +74,17 @@ a:hover::after {
 }
 
 .header {
-  box-shadow: none;
+  box-shadow: none !important;
   background: transparent;
-  border: none;
+  border: none !important;
 }
 
 .navbar {
   font-size: 0.94rem;
   padding: 0.35rem 0 0.65rem;
-  border-bottom: none;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  font-family: "Chivo", sans-serif !important;
 }
 
 .navbar-brand {
@@ -100,7 +94,7 @@ a:hover::after {
 
 .nav-link,
 .nav-dropdown-link {
-  padding: 0.1rem 0.35rem;
+  padding: 0.1rem 0.25rem;
   border: none;
   font-weight: 650;
 }
@@ -426,6 +420,7 @@ label.btn-page-header {
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 .li-summary {
   font-family: "Inter", sans-serif;

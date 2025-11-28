@@ -34,13 +34,13 @@ marketing:
 header:
   navbar:
     enable: true
-    align: l
+    align: r
     show_logo: false
     show_language: false
     show_day_night: false
     show_search: false
     show_theme_chooser: false
-    highlight_active_link: true
+    highlight_active_link: false
 
 # Site footer
 
