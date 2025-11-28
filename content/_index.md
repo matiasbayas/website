@@ -33,14 +33,48 @@ sections:
       show_date: false
       show_read_more: false
 
-  - block: collection
-    id: code
+  - block: markdown
+    id: code-and-notes
     content:
-      title: Code
+      title: Code & Notes
+      text: ""
+
+  - block: collection
+    id: comp-econ
+    content:
+      title: ECON
+      count: 0
+      filters:
+        folders: ["project"]
+        tag: "compecon"
+    design:
+      view: custom-li-list
+      columns: '1'
+      show_date: false
+      show_read_more: false
+
+  - block: collection
+    id: ai-systems
+    content:
+      title: AI
+      count: 0
+      filters:
+        folders: ["project"]
+        tag: "aisystems"
+    design:
+      view: custom-li-list
+      columns: '1'
+      show_date: false
+      show_read_more: false
+
+  - block: collection
+    id: notes
+    content:
+      title: Notes
       count: 0
       filters:
         folders:
-          - project
+          - notes
     design:
       view: custom-li-list
       columns: '1'

@@ -1,8 +1,8 @@
 :root {
   --bg: #ffffff;
   --text: #0c0c0c;
-  --muted: #606060;
-  --border: #e4e4e4;
+  --muted: #71717a;
+  --border: #e5e7eb;
 }
 
 * {
@@ -12,7 +12,7 @@
 
 html,
 body {
-  font-family: "Chivo", "Soehne", "Neue Haas Grotesk Text Pro", "Suisse Intl", "Inter", "SF Pro Text", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-family: "Inter", "Hanken Grotesk", "Plus Jakarta Sans", "Outfit", "Space Grotesk", "Manrope", "Chivo", "Soehne", "Neue Haas Grotesk Text Pro", "Suisse Intl", "SF Pro Text", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   background: var(--bg);
   color: var(--text);
   font-weight: 400;
@@ -26,8 +26,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Chivo", "Soehne", "Neue Haas Grotesk Display Pro", "Suisse Intl", "Inter", "SF Pro Display", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  font-weight: 650;
+  font-family: "Newsreader", "Hanken Grotesk", "Plus Jakarta Sans", "Outfit", "Space Grotesk", "Manrope", "Inter", "Chivo", "Soehne", "Neue Haas Grotesk Display Pro", "Suisse Intl", "SF Pro Display", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", serif !important;
+  font-weight: 600;
   letter-spacing: -0.018em;
   line-height: 1.05;
 }
@@ -90,7 +90,7 @@ a:hover::after {
 .navbar {
   font-size: 0.94rem;
   padding: 0.35rem 0 0.65rem;
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
 }
 
 .navbar-brand {
@@ -166,7 +166,7 @@ section,
 
 .li-list-item {
   border-bottom: 1px solid var(--border);
-  padding: 0.95rem 0;
+  padding: 1.25rem 0;
   list-style: none !important;
 }
 
@@ -189,11 +189,25 @@ section,
 }
 
 .li-line {
-  display: grid;
-  grid-template-columns: auto max-content;
-  gap: 1.75rem;
+  display: flex;
+  justify-content: space-between;
   align-items: baseline;
+  gap: 1rem;
   text-decoration: none;
+  flex-wrap: wrap;
+}
+
+.li-content-left {
+  flex: 1;
+  min-width: 0;
+  /* Prevent flex overflow */
+}
+
+.li-content-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
 }
 
 .li-title {
@@ -207,6 +221,7 @@ section,
   font-size: 0.9rem;
   margin-left: 0.75rem;
   font-weight: 400;
+  font-style: italic;
 }
 
 .li-meta {
@@ -238,7 +253,8 @@ label.btn-page-header {
 }
 
 .btn-links {
-  margin-top: 0.5rem;
+  margin-top: 0;
+  /* Remove top margin as it's now inline */
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -262,26 +278,33 @@ label.btn-page-header {
 }
 
 /* Match Code section title font to Research section */
+/* Match Code section title font to Research section */
 .article-title a {
-  font-family: 'Chivo', sans-serif !important;
-  font-weight: 400 !important;
-  font-size: 18px !important;
-  line-height: 1.6 !important;
+  font-family: 'Newsreader', serif !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.5 !important;
   color: rgb(12, 12, 12) !important;
 }
 
 /* Minimal Button Styling - Remove Blue Hover */
+/* Minimal Button Styling - Soft Pill */
 .btn-outline-primary {
+  background-color: #f4f4f5;
+  border: none;
+  color: #18181b;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
 
   &:hover,
   &:active,
   &:focus,
   &.active {
-    background-color: transparent !important;
-    color: var(--primary) !important;
-    /* Keep text color or use specific color */
+    background-color: #e4e4e7 !important;
+    color: #000 !important;
     box-shadow: none !important;
-    border-color: var(--primary) !important;
+    border: none !important;
   }
 }
 
@@ -302,18 +325,25 @@ label.btn-page-header {
 
 @media (max-width: 820px) {
   .li-line {
-    grid-template-columns: 1fr;
-    gap: 0.35rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 
-  .li-meta {
-    order: -1;
+  .li-content-right {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    /* Keep meta on right, buttons on left if needed, or adjust */
   }
+
+  /* .li-meta { order: -1; } removed */
 }
 
 @media (min-width: 1100px) {
   .li-abstract {
     -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
 }
 
@@ -368,4 +398,40 @@ label.btn-page-header {
   display: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700&display=swap");
+#code-and-notes {
+  padding-bottom: 0 !important;
+  margin-bottom: -0.5rem !important;
+  /* Reduced negative margin */
+}
+
+#comp-econ,
+#ai-systems,
+#notes {
+  padding-top: 1.5rem !important;
+  /* Increased top padding */
+  padding-bottom: 1.5rem !important;
+}
+
+#comp-econ .section-heading h1,
+#ai-systems .section-heading h1,
+#notes .section-heading h1 {
+  font-size: 1.35rem !important;
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif !important;
+  /* Use body font for subsections */
+  font-weight: 600;
+  color: var(--muted);
+  /* Make subsection titles slightly muted for hierarchy */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+
+.li-summary {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+  line-height: 1.5;
+  max-width: 90%;
+}

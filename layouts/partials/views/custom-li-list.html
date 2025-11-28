@@ -49,7 +49,7 @@
 <li class="li-list-item">
   <div class="li-block">
     <div class="li-line">
-      <div>
+      <div class="li-content-left">
         <a href="{{ $url }}" class="li-title-link"><span class="li-title">{{ $title }}</span></a>
         {{ $author_names := slice }}
         {{ range $author_slugs }}
@@ -66,40 +66,48 @@
         <span class="li-coauthors">with {{ delimit $author_names ", " }}</span>
         {{ end }}
       </div>
-      {{ with $meta }}<span class="li-meta">{{ . }}</span>{{ end }}
+
+      <div class="li-content-right">
+        <div class="btn-links">
+          {{ if and $show_abstract (gt (len $summary) 0) }}
+          {{ $abstractId := printf "abstract-%s" ($item.RelPermalink | md5) }}
+          <a href="#" data-target="{{ $abstractId }}"
+            class="btn btn-outline-primary btn-page-header btn-sm abstract-trigger">Abstract</a>
+          {{ end }}
+
+          {{ if $item.Params.url_pdf }}
+          {{ $pdf := $item.Resources.GetMatch $item.Params.url_pdf }}
+          {{ $pdfUrl := "" }}
+          {{ if $pdf }}
+          {{ $pdfUrl = $pdf.RelPermalink }}
+          {{ else }}
+          {{ $pdfUrl = $item.Params.url_pdf }}
+          {{ end }}
+          <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ $pdfUrl }}" target="_blank"
+            rel="noopener">PDF</a>
+          {{ end }}
+
+          {{ if $item.Params.url_slides }}
+          {{ $slides := $item.Resources.GetMatch $item.Params.url_slides }}
+          {{ $slidesUrl := "" }}
+          {{ if $slides }}
+          {{ $slidesUrl = $slides.RelPermalink }}
+          {{ else }}
+          {{ $slidesUrl = $item.Params.url_slides }}
+          {{ end }}
+          <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ $slidesUrl }}" target="_blank"
+            rel="noopener">Slides</a>
+          {{ end }}
+        </div>
+        {{ with $meta }}<span class="li-meta">{{ . }}</span>{{ end }}
+      </div>
     </div>
 
-    <div class="btn-links">
-      {{ if and $show_abstract (gt (len $summary) 0) }}
-      {{ $abstractId := printf "abstract-%s" ($item.RelPermalink | md5) }}
-      <a href="#" data-target="{{ $abstractId }}"
-        class="btn btn-outline-primary btn-page-header btn-sm abstract-trigger">Abstract</a>
-      {{ end }}
-
-      {{ if $item.Params.url_pdf }}
-      {{ $pdf := $item.Resources.GetMatch $item.Params.url_pdf }}
-      {{ $pdfUrl := "" }}
-      {{ if $pdf }}
-      {{ $pdfUrl = $pdf.RelPermalink }}
-      {{ else }}
-      {{ $pdfUrl = $item.Params.url_pdf }}
-      {{ end }}
-      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ $pdfUrl }}" target="_blank"
-        rel="noopener">PDF</a>
-      {{ end }}
-
-      {{ if $item.Params.url_slides }}
-      {{ $slides := $item.Resources.GetMatch $item.Params.url_slides }}
-      {{ $slidesUrl := "" }}
-      {{ if $slides }}
-      {{ $slidesUrl = $slides.RelPermalink }}
-      {{ else }}
-      {{ $slidesUrl = $item.Params.url_slides }}
-      {{ end }}
-      <a class="btn btn-outline-primary btn-page-header btn-sm" href="{{ $slidesUrl }}" target="_blank"
-        rel="noopener">Slides</a>
-      {{ end }}
+    {{ if and (not $show_abstract) $item.Summary }}
+    <div class="li-summary">
+      {{ $item.Summary }}
     </div>
+    {{ end }}
 
     {{ if and $show_abstract (gt (len $summary) 0) }}
     {{ $abstractId := printf "abstract-%s" ($item.RelPermalink | md5) }}

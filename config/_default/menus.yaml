@@ -10,6 +10,6 @@ main:
   - name: Research
     url: '#research'
     weight: 20
-  - name: Code
-    url: '#code'
+  - name: Code & Notes
+    url: '#code-and-notes'
     weight: 30
