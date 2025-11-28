@@ -19,7 +19,7 @@
 {{ $meta = $year }}
 {{ end }}
 
-{{ $show_abstract := in (slice "working-papers" "work-in-progress" "publication" "research") $item.Section }}
+{{ $show_abstract := in (slice "working-papers" "work-in-progress" "publication" "research" "policy") $item.Section }}
 
 {{ $raw := "" }}
 {{ if $item.Params.abstract }}
@@ -51,6 +51,18 @@
     <div class="li-line">
       <div class="li-content-left">
         <a href="{{ $url }}" class="li-title-link"><span class="li-title">{{ $title }}</span></a>
+        
+        {{/* Publication Info */}}
+        {{ if $item.Params.publication_short }}
+        <div class="li-publication" style="font-size: 0.9rem; color: var(--muted); margin-top: 0.2rem;">
+          {{ $item.Params.publication_short | markdownify }}
+        </div>
+        {{ else if $item.Params.publication }}
+        <div class="li-publication" style="font-size: 0.9rem; color: var(--muted); margin-top: 0.2rem;">
+          {{ $item.Params.publication | markdownify }}
+        </div>
+        {{ end }}
+
         {{ $author_names := slice }}
         {{ range $author_slugs }}
         {{ if ne . "admin" }}

@@ -51,6 +51,20 @@ sections:
       show_date: false
       show_read_more: false
 
+  - block: collection
+    id: policy
+    content:
+      title: Policy & Book Chapters
+      count: 0
+      filters:
+        folders:
+          - policy
+    design:
+      view: custom-li-list
+      columns: '1'
+      show_date: false
+      show_read_more: false
+
   - block: markdown
     id: code-and-notes
     content:
