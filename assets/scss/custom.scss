@@ -261,6 +261,15 @@ label.btn-page-header {
   content: none !important;
 }
 
+/* Match Code section title font to Research section */
+.article-title a {
+  font-family: 'Chivo', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: rgb(12, 12, 12) !important;
+}
+
 /* Minimal Button Styling - Remove Blue Hover */
 .btn-outline-primary {
 
@@ -274,6 +283,16 @@ label.btn-page-header {
     box-shadow: none !important;
     border-color: var(--primary) !important;
   }
+}
+
+/* Reduce abstract font size */
+.li-abstract {
+  margin-top: 0.3rem;
+  color: var(--text);
+  line-height: 1.5;
+  display: none;
+  font-size: 0.9rem;
+  /* Smaller than title */
 }
 
 /* Fallback for legacy <details> abstracts */
