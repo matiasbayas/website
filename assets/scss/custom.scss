@@ -358,6 +358,65 @@ label.btn-page-header {
   opacity: 0.2;
 }
 
+#intro p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+#intro h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  /* Adjust spacing below title */
+}
+
+#intro .intro-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#intro .intro-text {
+  flex: 1;
+  min-width: 0;
+  /* Prevent flex overflow */
+}
+
+#intro .intro-image {
+  flex: 0 0 280px;
+  width: 280px;
+  /* Explicit width */
+  max-width: 280px;
+}
+
+#intro .intro-image img {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px;
+  /* Optional: subtle rounding */
+  display: block;
+  margin: 0;
+  /* Reset margin */
+  /* Make it grayscale for a minimal look, optional */
+  /* filter: grayscale(100%); */
+}
+
+@media (max-width: 850px) {
+  .intro-container {
+    flex-direction: column-reverse;
+    /* Text on top, image below? Or standard column */
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .intro-image {
+    flex: 0 0 auto;
+    max-width: 200px;
+    margin: 0 auto;
+    /* Center image on mobile */
+  }
+}
+
 /* Single pages: strip extras */
 .article-container .share-box,
 .article-container .article-tags,

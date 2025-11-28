@@ -8,22 +8,32 @@ sections:
   - block: markdown
     id: intro
     content:
-      title: 'Matias Bayas-Erazo'
+      title: ''
       text: |-
+        <div class="intro-container">
+        <div class="intro-text">
+
+        <h1>Matias Bayas-Erazo</h1>
+
         Economist studying optimal taxation and macroeconomics.
 
-        Curious about AI and its applications.
+        Exploring the intersection of AI and economics.
 
         I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact.
 
         I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
-          
 
         <div class="intro-links">
         <a href="/uploads/resume.pdf">CV</a>
         <a href="https://github.com/matiasbayas">GitHub</a>
         <a href="https://www.linkedin.com/in/matias-bayas-erazo-46a1192a5/">LinkedIn</a>
         <a href="mailto:matias.bayas-erazo@econ.uzh.ch">Email</a>
+        </div>
+
+        </div>
+        <div class="intro-image">
+        <img src="authors/admin/avatar.jpg" alt="Matias Bayas-Erazo">
+        </div>
         </div>
 
   - block: collection
