@@ -42,7 +42,7 @@ sections:
         folders:
           - project
     design:
-      view: li-list
+      view: custom-li-list
       columns: '1'
       show_date: false
       show_read_more: false
