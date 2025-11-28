@@ -10,7 +10,13 @@ sections:
     content:
       title: 'Matias Bayas-Erazo'
       text: |-
-        I am a Postdoctoral Researcher at the University of Zürich. I study macroeconomics and public finance, with a focus on fiscal policy, heterogeneity, and rational inattention.
+        Economist studying optimal taxation and macroeconomics.
+
+        I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact.
+
+        I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
+
+        Driven by a curiosity for AI, I build systems to explore its emerging applications.
 
         <div class="intro-links">
         <a href="/uploads/resume.pdf">CV</a>

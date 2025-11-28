@@ -22,7 +22,7 @@ organizations:
     url: "https://www.econ.uzh.ch/en.html"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests lie in macroeconomics and public finance.
+bio: Economist studying optimal taxation and macroeconomics.
 
 # Interests to show in About widget
 interests:
@@ -70,10 +70,12 @@ email: ''
 highlight_name: true
 ---
 
-I am a Postdoctoral Researcher at the University of Zürich. 
+Economist studying optimal taxation and macroeconomics.
 
-My fields of research are macroeconomics and public finance. In particular, I am interested in fiscal policy, the aggregate implications of heterogeneity, and rational inattention. 
+I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact.
 
-I received my  Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024. 
+I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
+
+Driven by a curiosity for AI, I build systems to explore its emerging applications. 
 
 {style="text-align: justify;"}
