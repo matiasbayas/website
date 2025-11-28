@@ -17,9 +17,7 @@ sections:
 
         Economist studying optimal taxation and macroeconomics.
 
-        Exploring the intersection of AI and economics.
-
-        I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact.
+        I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact. I'm also curious about AI and its applications to economics and beyond.
 
         I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
 
@@ -54,7 +52,7 @@ sections:
   - block: collection
     id: policy
     content:
-      title: Policy & Book Chapters
+      title: Policy/Book Chapters
       count: 0
       filters:
         folders:
