@@ -1,5 +1,5 @@
 ---
-title: "Understanding Ecuador’s growth prospects in the aftermath of the Citizens’ Revolution"
+title: "Understanding Ecuador’s Growth Prospects"
 date: 2019-01-01
 publishDate: 2019-01-01T00:00:00Z
 authors: ["admin"]
