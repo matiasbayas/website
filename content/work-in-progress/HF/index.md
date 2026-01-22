@@ -1,6 +1,7 @@
 ---
 
 title: Heterogeneous Firms and the Dynamics of Investment
+date: 2025-01-01
 
 # url_pdf: ''
 #url_slides: 'ML_presentation.pdf'

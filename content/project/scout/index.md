@@ -1,6 +1,6 @@
 ---
 title: SCOUT
-summary: An autonomous research assistant that automates literature reviews and synthesizes academic insights using large language models.
+summary: LLM-powered tool for automated literature review.
 tags:
 - aisystems
 date: "2023-11-28T00:00:00Z"

@@ -1,6 +1,6 @@
 ---
 title: TrainAI
-summary: The first complete AI training system that thinks, plans, and evolves with you—like an operating system for your athletic journey.
+summary: AI-powered training planner for endurance athletes.
 tags:
 - aisystems
 date: "2023-11-28T00:00:00Z"

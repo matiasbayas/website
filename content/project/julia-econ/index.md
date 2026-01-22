@@ -1,6 +1,6 @@
 ---
 title: JuliaEcon
-summary: A high-performance library of numerical methods for solving dynamic economic models and structural estimation in Julia.
+summary: Julia library for dynamic economic models.
 tags:
 - compecon
 date: "2023-11-28T00:00:00Z"

@@ -1,6 +1,6 @@
 ---
 title: Econ-RL
-summary: A framework leveraging deep reinforcement learning to solve complex heterogeneous agent models and optimal policy problems.
+summary: Deep RL for solving heterogeneous agent economic models.
 tags:
 - compecon
 date: "2023-11-28T00:00:00Z"

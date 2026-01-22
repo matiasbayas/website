@@ -1,5 +1,6 @@
 ---
 title: "Optimal Public Debt with Redistribution (JMP)"
+date: 2024-01-01
 
 url_pdf: 'PDR.pdf'
 url_slides: 'slides-JM.pdf'

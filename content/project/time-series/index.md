@@ -1,6 +1,6 @@
 ---
 title: TimeSeries
-summary: A comprehensive toolkit for time series analysis, featuring advanced filtering, forecasting, and spectral analysis methods.
+summary: Time series filtering and spectral analysis in Julia.
 tags:
 - compecon
 date: "2023-11-28T00:00:00Z"

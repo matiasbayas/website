@@ -1,6 +1,6 @@
 ---
 title: Lecture Notes on HANK
-summary: Slides for macroeconomics course.
+summary: Notes on heterogeneous agent New Keynesian models.
 tags:
 - Notes
 date: "2023-11-28T00:00:00Z"

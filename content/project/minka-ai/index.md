@@ -1,6 +1,6 @@
 ---
 title: MinkaAI
-summary: The unifying optimization engine powering autonomous agents, bridging the gap between economic theory and advanced AI systems.
+summary: Optimization algorithms for autonomous AI systems.
 tags:
 - aisystems
 weight: 10

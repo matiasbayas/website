@@ -21,6 +21,8 @@ sections:
 
         I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
 
+        <span class="now-label">Now</span> Finishing tariffs paper with Lorenzoni and inattention paper with Angeletos. Solving for optimal transitions in sequence space. Training for a half marathon. Building a side project that helps runners plan training with AI. Reading about RL, AL, and AI systems in general. 
+
         <div class="intro-links">
         <a href="/uploads/resume.pdf">CV</a>
         <a href="https://github.com/matiasbayas">GitHub</a>
@@ -34,11 +36,19 @@ sections:
         </div>
         </div>
 
-  - block: collection
+  - block: markdown
     id: research
     content:
-      title: Research
+      title: 'Research'
+      text: ""
+
+  - block: collection
+    id: working-papers
+    content:
+      title: Working Papers
       count: 0
+      sort_by: 'Date'
+      sort_ascending: true
       filters:
         folders:
           - working-papers
