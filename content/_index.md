@@ -21,7 +21,7 @@ sections:
 
         I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
 
-        <span class="now-label">Now</span> Finishing tariffs paper with Lorenzoni and inattention paper with Angeletos. Solving for optimal transitions in sequence space. Training for a half marathon. Building a side project that helps runners plan training with AI. Reading about RL, AL, and AI systems in general. 
+        <span class="now-label">Now</span> Wrapping up papers on tariffs and inattention. Solving for optimal transitions in sequence space. Training for a half marathon. Building a side project that helps runners plan training with AI. Reading about RL and AI systems. 
 
         <div class="intro-links">
         <a href="/uploads/resume.pdf">CV</a>
