@@ -17,6 +17,7 @@ url_project: ""
 url_slides: ""
 url_source: ""
 url_video: ""
+external_link: "https://link.springer.com/chapter/10.1007/978-3-030-27625-6_9"
 links:
 - name: Link
   url: https://link.springer.com/chapter/10.1007/978-3-030-27625-6_9
