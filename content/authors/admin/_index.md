@@ -75,8 +75,6 @@ highlight_name: true
 
 Economist studying optimal taxation and macroeconomics.
 
-Exploring the intersection of AI and economics.
-
 I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact.
 
 I received my Ph.D. in Economics from [Northwestern University](https://economics.northwestern.edu/) in 2024.
