@@ -22,7 +22,7 @@ organizations:
     url: "https://www.econ.uzh.ch/en.html"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Economist studying optimal taxation and macroeconomics.
+bio: Economist working on macroeconomics and public finance.
 
 # Interests to show in About widget
 interests:
@@ -73,7 +73,7 @@ email: ''
 highlight_name: true
 ---
 
-Economist studying optimal taxation and macroeconomics.
+Economist working on macroeconomics and public finance.
 
 I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact.
 

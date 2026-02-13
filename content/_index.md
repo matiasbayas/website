@@ -15,7 +15,7 @@ sections:
 
         <h1>Matias Bayas-Erazo</h1>
 
-        Economist studying optimal taxation and macroeconomics.
+        Economist working on macroeconomics and public finance.
 
         I am a Postdoctoral Researcher at the [University of Zürich](https://www.econ.uzh.ch/en.html). My research focuses on macroeconomics and public finance. I use theory and computational tools to identify new mechanisms and quantify their impact. I'm also curious about AI and its applications to economics and beyond.
 
