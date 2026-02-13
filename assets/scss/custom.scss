@@ -318,11 +318,17 @@ label.btn-page-header {
 }
 
 @media (max-width: 820px) {
+  /* Opaque navbar so content doesn't bleed through when scrolled */
+  .navbar {
+    background: var(--bg);
+  }
+
   /* Cap main section headings on mobile */
   .section-heading h1 {
     font-size: 1.75rem !important;
   }
 
+  /* Research/policy items: stack title and year/buttons */
   .li-line {
     flex-direction: column;
     align-items: flex-start;
@@ -339,11 +345,26 @@ label.btn-page-header {
     padding: 0.7rem 0;
   }
 
-  /* Hide year row for code/notes projects on mobile — they're all 2023 and it wastes a full line */
+  /* Coauthors on their own line on mobile */
+  .li-coauthors {
+    display: block;
+    margin-left: 0;
+  }
+
+  /* Code/notes projects: keep year inline with title */
+  #comp-econ .li-line,
+  #ai-systems .li-line,
+  #notes .li-line {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
   #comp-econ .li-content-right,
   #ai-systems .li-content-right,
   #notes .li-content-right {
-    display: none;
+    width: auto;
+    flex-direction: row;
   }
 }
 
